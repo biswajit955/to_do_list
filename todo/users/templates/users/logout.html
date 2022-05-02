@@ -1,0 +1,12 @@
+{% comment %} {% extends "blog/base.html" %} {% endcomment %}
+{% extends "main/todo/base.html" %}
+{% block content %}
+<h2>You has been Logout, Login again or sing up</h2>
+    <small class="text-muted">
+     <a class="btn btn-primary" href="{%url 'login'%}">Login</a>
+    </small>
+    <br>
+    <small class="text-muted">
+        <a class="btn btn-primary" href="{%url 'register'%}">singup</a>
+       </small>
+{% endblock content %}
